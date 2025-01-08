@@ -1,0 +1,247 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Markazi+Text:wght@400..700&display=swap');
+@font-face{
+    font-family: myFont;
+    src:url(norwester.otf)
+}
+
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif, 'Roboto';
+height: 100%;
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+html {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif, 'Roboto';
+height: 100%;
+background-image: url('bg.jpg'); /* Replace with the correct path */
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+display: flex;
+flex-direction: column; /* Change to column to stack sections vertically */
+align-items: flex-start;
+flex-wrap: wrap;
+max-width: 1200px;
+margin-bottom: 200px;
+}
+
+.left-section, .right-section {
+
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+padding-bottom: 10px;
+color: white;
+font: 18px 'Roboto', sans-serif;
+align-items: center;
+
+}
+.left-section  {
+    margin-left: 150px;
+    }
+    
+.left-section h1 {
+font-size: 90px;
+margin-bottom: 20px;
+color: #000000;
+font-family: myFont;
+font-weight: 400;
+font-style: normal;
+text-shadow: 2px 2px 15px rgb(255, 255, 255);
+text-align: center;
+margin-bottom: 30px;
+}
+img {
+    width: 700px;
+}
+
+.left-section p {
+font-size: 18px;
+line-height: 1.5;
+font-family: "Markazi Text", serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+
+.right-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: 140px;
+
+
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 110px;
+    margin-top: 40px;
+   
+}
+
+#bar {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#emergencyForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input#emergencySearch {
+    padding: 25px 20px; /* Adjust padding */
+    border: 3px solid #000000;
+    border-radius: 40px;
+    font-size: 27px;
+    box-sizing: content-box; /* Ensures width includes padding and border */
+    width: 100%; /* Adjust based on margins if needed */
+    margin-left: 20px;
+    
+}
+
+#emergencySearch:focus {
+outline: none;
+border: 3px solid #ccc;
+}
+
+#emergencySearch:placeholder-shown {
+border-bottom: none;
+margin-bottom: 0; /* Adjust margin to remove extra space */
+
+}
+
+#emergencySearch:focus-visible {
+outline: none;
+}
+
+button[type="submit"] {
+padding: 25px 25px;
+background-color: #333;
+color: white;
+border-radius: 35px;
+cursor: pointer;
+font-size: 18px;
+font: 18px 'Roboto', sans-serif;
+margin: 20px;
+}
+img.searchbttn {
+    height: 20px;
+    width: 20px;
+}
+
+button[type="submit"]:hover {
+background-color: #555;
+}
+
+
+.dropdown {
+background-color: #fff;
+max-height: 150px;
+overflow-y: auto;
+color: #333;
+width: 690px;
+position: relative;
+display: inline-block;
+margin-left: 25px;
+margin-top: -10px;
+border-radius: 10px;
+
+
+}
+
+.dropdown div {
+padding: 10px;
+cursor: pointer;
+display: block;
+
+
+}
+
+
+button[onclick="openPopup()"] {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: myFont;
+    margin-left: 80px;
+    border: 3px #000000;
+    border-radius: 30px;
+}
+button[onclick="openPopup()"]:hover {
+    background-color: #c0bcbc;
+}
+
+button#redirectButton {
+background-color: #ffffff;
+padding: 8px 15px;
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 30px;
+cursor: pointer;
+font-size: 28px;
+font-family: myFont;
+margin-right: 80px;
+max-width: 280px;
+}
+
+button#redirectButton:hover {
+    background-color: #c0bcbc;
+}
+
+#emergencyForm::after {
+content: "";
+display: block;
+height: 0;
+clear: both;
+
+}
+
+@media (max-width: 768px) {
+.container {
+flex-direction: column;
+text-align: center;
+}
+
+
+
+
+
+button[type="button"] {
+width: 100%;
+}
+}
