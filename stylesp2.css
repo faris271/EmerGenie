@@ -139,7 +139,11 @@ button[type="button"] {
     font-family: myFont;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 450px) {
+
+    body {
+        background-size: 200%;
+    }
 
     .container {
         display: flex;
@@ -156,7 +160,7 @@ button[type="button"] {
         font-size: 27px;
     }
     h1 {
-        margin-top: 35px;
+        margin-top: 7px;
         font-size: 100px;
 
     }
