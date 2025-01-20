@@ -189,7 +189,7 @@ button#redirectButton, button[onclick="openPopup()"] {
 }
 
 /* Media Query for small devices */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     body, html {
         height: auto; /* Allows content to scroll */
         margin-top: 50px;

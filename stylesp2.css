@@ -68,6 +68,7 @@ img.acss1 {
     outline-color: black;
     border-radius: 35px;
     margin-left: 20px; /* Add margin to create space between instruction box and map */
+    min-width: 300px;
 }
 
 #hospitals {
@@ -80,6 +81,7 @@ img.acss1 {
     margin-bottom: 20px;
     outline-style: solid;
     outline-color: black;
+    width: auto;
 }
 
 button[type="button"] {
@@ -139,7 +141,7 @@ button[type="button"] {
     font-family: myFont;
   }
   
-  @media (max-width: 450px) {
+  @media (min-height: 800px) {
 
     body {
         background-size: 200%;
@@ -154,6 +156,7 @@ button[type="button"] {
     #map {
         margin-top: 50px;
         height: 200px;
+    
         
     }
     .instruction-box {
@@ -173,5 +176,6 @@ button[type="button"] {
     }
     #hospitals {
         font-size: 24px;
+        padding-left: 30px;
     }
   }
