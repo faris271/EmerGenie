@@ -1,33 +1,52 @@
+@font-face {
+    font-family: myFont;
+    src: url(norwester.otf);
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     padding: 20px;
     background-color: #f0f2f5;
     color: #333;
+    background-image: url('img2.jpg');
 }
 
 h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 60px;
     margin-bottom: 30px;
+    margin-top: -30px;
     padding: 20px;
-    background-color: #2a8eff;
-    color: white;
+    color: black;
     width: 100%;
-    
+    font-family: myFont;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 15px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
 }
+img.acss {
+    height: 100px;
+    margin-top: -10px;
+    transform: scaleX(-1);
 
+}
 .container {
     display: flex;
 }
-
+img.acss1 {
+    height: 100px;
+    margin-top: -10px;
+}
 #instructions {
-    background-color: white;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 20px; /* Add margin to create space between instruction box and map */
-    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column; /* Take up remaining space */
 }
 
 #map-container {
@@ -35,21 +54,24 @@ h1 {
 }
 
 #map {
-    background-color: white;
-    padding: 200px;
+    padding: 150px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    outline-style: solid;
+    outline-color: black;
+    border-radius: 35px;
     margin-left: 20px; /* Add margin to create space between instruction box and map */
 }
 
 #hospitals {
-    background-color: white;
+    background-color: rgb(230, 244, 248);
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 20px; /* Add margin to create space between instruction box and map */
     margin-top: 20px;
     margin-bottom: 20px;
+    outline-style: solid;
+    outline-color: black;
 }
 
 button[type="button"] {
@@ -71,26 +93,75 @@ button[type="button"] {
     background-color: #f8d7da;
     color: #721c24;
     padding: 10px;
+    padding-left: 20px;
     border-radius: 5px;
+    outline-style: solid;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-family: myFont;
 }
 
 .alert-info {
-    background-color: #d1ecf1;
-    color: #0c5460;
-    padding: 10px;
+    background-color: rgb(253, 253, 251);
+    outline-style: solid;
+    color: black;
+    padding: 5px;
+    padding-left: 30px;
     border-radius: 5px;
     z-index: 9999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
+    margin-bottom: 20px;
+    font-family: myFont;
+    font-size: 24px;
 }
 .instruction-box {
-    padding: 10px;
-    margin: 5px 0;
+    padding: 25px;
+    margin: 10px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+    background-color: rgb(235, 244, 247);
+    border-radius: 80px;
+    outline-style: solid;
+    outline-color: black;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-shadow: #ccc;
+    font-family: myFont;
   }
 h2 {
     color: #721c24;
+  }
+  @media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    
+    #map {
+        margin-top: 50px;
+        height: 200px;
+        
+    }
+    .instruction-box {
+        font-size: 27px;
+    }
+    h1 {
+        margin-top: 35px;
+        font-size: 100px;
+
+    }
+    img.acss, img.acss1 {
+        height: 150px;
+    }
+    .alert-danger, .alert-info {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    #hospitals {
+        font-size: 24px;
+    }
   }

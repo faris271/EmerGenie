@@ -1,6 +1,10 @@
+@font-face {
+  font-family: myFont;
+  src: url(norwester.otf);
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
+    background-image: url('img2.jpg');
     color: #333;
     margin: 0;
     padding: 0;
@@ -8,26 +12,53 @@ body {
   
   h1 {
     text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: -5px;
     padding: 20px;
-    background-color: #1e90ff; /* Dodger blue */
-    color: white;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 100%;
+    font-family: myFont;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 15px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  
+  img.acss {
+    height: 100px;
+    margin-top: -10px;
+    transform: scaleX(-1);
+  }
+  img.acss1 {
+    height: 100px;
+    margin-top: -10px;
+}
+
   #map {
     height: 500px;
-    margin: 20px;
-    border-radius: 8px;
+    width: 850px;
+    transform: translate(10px,-100px);
+    margin-top: 50px;
+    margin-left:30px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline-style: solid;
+    outline-color: black;
   }
   
   #hospitals {
-    margin: 20px;
+  margin-left: 920px;
+  margin-top: -600px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: rgb(235, 244, 247);
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline-style: solid;
+    outline-color: black;
+    width: 400px;
+  
   }
   
   h2 {
@@ -52,3 +83,30 @@ body {
     margin: 5px 0;
   }
   
+  @media (max-width: 768px) {
+    #map {
+      margin-top: 120px;
+     width: 920px;
+      height: 650px;
+    }
+    img.acss, img.acss1 {
+      height: 150px;
+  }
+
+  h1 {
+    margin-top: 55px;
+    font-size: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#hospitals {
+  font-size: 24px;
+  transform: translate(-880px,550px);
+  width: 880px;
+
+
+}
+  }
