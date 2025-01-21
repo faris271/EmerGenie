@@ -82,6 +82,7 @@ img.acss1 {
     outline-style: solid;
     outline-color: black;
     width: auto;
+    font-family: myFont;
 }
 
 button[type="button"] {
