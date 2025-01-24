@@ -10,7 +10,23 @@ const emergencies = [
   "Freezing Cold and Shivering (Hypothermia)",
   "Severe Allergic Reaction (swelling or hard to breathe)",
   "Asthma Attack",
-  "Choking"
+  "Choking",
+  "Severe Bleeding (Hemorrhage)",  
+  "Head Injury",  
+  "Seizure",  
+  "Shock (Hypovolemic, Septic, Anaphylactic)",  
+  "Fractures (Broken Bones)",  
+  "Cardiac Arrest",  
+  "Chest Pain (Angina)",  
+  "Appendicitis",  
+  "Acute Abdominal Pain",  
+  "Spinal Injury",  
+  "Eye Injury",  
+  "Electric Shock",  
+  "Eclampsia (Pregnancy-Related Hypertension)",  
+  "Pneumothorax (Collapsed Lung)",  
+  "Fainting (Syncope)"  
+
 ];
 
 document.addEventListener("DOMContentLoaded", function() {
